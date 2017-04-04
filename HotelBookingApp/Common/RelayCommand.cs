@@ -8,7 +8,7 @@ using Windows.UI.Xaml;
 
 namespace HotelBookingApp.Common
 {
-    class RelayCommand
+    class RelayCommand : ICommand
     {
         private Action methodToExecute = null;
         private Func<bool> methodToDetectCanExecute = null;
